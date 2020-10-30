@@ -1,0 +1,19 @@
+.titlePos {
+    position: absolute;
+    left: 0;
+    margin-left: 5px;
+}
+
+.butpos {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    margin-left: 5px;
+
+}
+.userData {
+    position: absolute;
+    top: 170px;
+    left: 0;
+    margin-left: 50px;
+}
