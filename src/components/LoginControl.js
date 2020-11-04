@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {Button, Form, Nav} from "react-bootstrap";
 import Login from "./Login";
+import Login2 from "./Login2";
 const LoginControl = (props) => {
     const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem("currentUser") === null ? false : true);
 
@@ -10,7 +11,7 @@ const LoginControl = (props) => {
         setIsLoggedIn(true);
         return(
             <div>
-                <Login/>
+                <Login2/>
             </div>
         );
 

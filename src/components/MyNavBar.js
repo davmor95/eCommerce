@@ -22,6 +22,7 @@ const MyNavBar = (props) => {
                 <Nav.Link href="/home" className="nav-menu-items">Home</Nav.Link>
                 <Nav.Link href="/contact"><span className="nav-menu-items">Contact</span></Nav.Link>
                 <Nav.Link href="/admin"><span className="nav-menu-items">Admin</span></Nav.Link>
+                {isLoggedIn ? <Nav.Link href="/login"><span className="nav-menu-item">Login</span></Nav.Link>: <Nav.Link href="/logout"><span className="nav-menu-item">Logout</span></Nav.Link> }
                 {isLoggedIn &&
                 <NavDropdown title="User" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -35,7 +36,7 @@ const MyNavBar = (props) => {
 
                 }
             </Nav>
-            <LoginControl/>
+            {/*<LoginControl/>*/}
         </Navbar>
         </>
     );
